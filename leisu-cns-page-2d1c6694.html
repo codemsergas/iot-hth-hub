@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料整理·雷速索引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #fafafa;
+            color: #1c1c1e;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", system-ui, sans-serif;
+            line-height: 1.75;
+            padding: 3rem 1.25rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .page {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        /* 文章头部 */
+        .article-header {
+            margin-bottom: 2.8rem;
+            padding-bottom: 1.8rem;
+            border-bottom: 1px solid #e6e6e8;
+        }
+        .article-header .meta {
+            font-size: 0.85rem;
+            color: #8e8e93;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.8rem;
+        }
+        .article-header h1 {
+            font-size: 2rem;
+            font-weight: 650;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            margin-bottom: 0.9rem;
+            color: #18181a;
+        }
+        .article-header .lede {
+            font-size: 1.05rem;
+            color: #3a3a3e;
+            max-width: 580px;
+            border-left: 3px solid #c4c4c8;
+            padding-left: 1.2rem;
+            margin-top: 0.2rem;
+        }
+
+        /* 正文段落 */
+        .content p {
+            margin-bottom: 1.6rem;
+            font-size: 1rem;
+            color: #2c2c2e;
+            word-break: break-word;
+        }
+        .content p strong {
+            font-weight: 600;
+            color: #1a1a1c;
+        }
+        .content a {
+            color: #0057b3;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.15s;
+        }
+        .content a:hover {
+            color: #002b5c;
+            text-decoration-thickness: 1.5px;
+        }
+
+        /* 引用 / 提示块 */
+        .callout {
+            background: #f2f2f5;
+            border-radius: 12px;
+            padding: 1.5rem 1.8rem;
+            margin: 2rem 0 1.8rem 0;
+            font-size: 0.95rem;
+            border-left: 4px solid #8e8e93;
+        }
+        .callout .label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #6c6c70;
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+        .callout p {
+            margin-bottom: 0.5rem;
+        }
+        .callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 访问句 */
+        .access-line {
+            margin-top: 2.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e6e6e8;
+            font-size: 0.95rem;
+            color: #48484a;
+            line-height: 1.7;
+        }
+        .access-line a {
+            color: #0057b3;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        /* 分隔小元素 */
+        .separator {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: #d1d1d6;
+            margin: 2.4rem 0 2rem 0;
+        }
+
+        /* 响应式微调 */
+        @media (max-width: 520px) {
+            body {
+                padding: 2rem 1rem;
+            }
+            .article-header h1 {
+                font-size: 1.6rem;
+            }
+            .article-header .lede {
+                font-size: 0.95rem;
+                padding-left: 1rem;
+            }
+            .callout {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <div class="article-header">
+        <div class="meta">资料索引 · 信息整理</div>
+        <h1>雷速：信息聚合与交叉引用的方法</h1>
+        <div class="lede">从零散信源中建立关联，让资料的价值不止于存储。</div>
+    </div>
+
+    <div class="content">
+
+        <p>在信息过载的日常中，大部分资料处于“已收集、未处理”的状态。纯粹的收藏行为并不能自动生成认知脉络——真正的整理，是将孤立条目放入坐标系，形成可供检索和交叉引用的结构。<strong>雷速</strong>在这个层面上提供的，是一套偏向轻量、但注重连接性的信息索引逻辑。</p>
+
+        <p>不同于常见的信息管理工具，<a href="https://leisu-cns-rayspeed.com">雷速</a>没有刻意堆叠复杂分类或标签层级，而是更强调条目之间的显式关联。每一个资料单元都可以与其他单元建立“引用 / 被引用”关系，这种设计接近学术文献的交叉引用方式，但对日常笔记、网页剪辑、项目备忘同样适用。当你需要回溯某个概念的上下文时，关联路径比目录更直观。</p>
+
+        <p>实际使用中，这种索引方式的优势在于“回溯效率”。假设你半年前记录了一条关于某行业数据的简短笔记，如果当时只按照文件夹存放，再次找到它往往依赖模糊记忆；而在雷速的结构下，你很可能通过另一条与其关联的笔记顺藤摸瓜，在几步之内定位到原始片段。这种串联机制，减少了反复翻找的挫败感。</p>
+
+        <div class="callout">
+            <span class="label">整理提示</span>
+            <p>不必追求一次性建立完整的关联网络。开始时只需要把每一条资料与最相关的 1–2 个条目连接，后续随着内容增加，关联会自然生长。避免过度分类，让链接代替层级。</p>
+        </div>
+
+        <p>另一个值得注意的细节是：<strong>雷速</strong>在资料展示上采取了极简的文本优先原则。没有冗余的封面图、卡片动效或复杂按钮，信息本身的密度被推到前台。这对长期资料维护尤其重要——视觉噪音越少，筛选成本越低。对于需要定期回顾的笔记库、研究报告摘要或是项目复盘记录，这种风格能帮助注意力更长时间停留在文本内容上。</p>
+
+        <p>需要权衡的是，极简风格意味着新用户需要短暂适应其操作逻辑。如果你习惯了富文本编辑器或拖拽式看板，第一次使用 <a href="https://leisu-cns-rayspeed.com">雷速</a> 可能会觉得功能边界过于收敛。但一旦度过适应期，你会发现在“找资料”这件事上，干扰项消失了，只剩下索引本身。</p>
+
+    </div>
+
+    <div class="separator" role="presentation"></div>
+
+    <div class="access-line">
+        如果对信息整理方法有持续需求，可以进一步了解 <a href="https://leisu-cns-rayspeed.com">雷速</a> 的设计思路与具体功能。站点本身就是一个实验性的资料索引实例。
+    </div>
+
+</div>
+</body>
+</html>
